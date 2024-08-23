@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Welcome, <span id="username"></span>!</h1>
+
+    <header>
+        <button class="open-logout">Logout</button>
+    </header>
+
+    <div class="btn-logout">
+        <p>Are you sure?</p>
+        <div class="btn">
+            <button type="button" class="yes">Yes</button>
+            <button type="button" class="no">No</button>
+        </div>
+    </div>
+
+    <script>
+        // Display the username from localStorage or default to "Guest"
+        document.getElementById("username").textContent = localStorage.getItem("username") || "Guest";
+    </script>
+    <script src="script2.js"></script>
+</body>
+</html>
